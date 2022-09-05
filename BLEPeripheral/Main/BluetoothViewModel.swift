@@ -90,4 +90,10 @@ class BluetoothViewModel: NSObject, ObservableObject, CBPeripheralManagerDelegat
 //            // Perform here your additional operations on the data you get
 //        }
     }
+    
+    func peripheralManager(_ peripheral: CBPeripheralManager, central: CBCentral, didSubscribeTo characteristic: CBCharacteristic) {
+        print("got subscribed to")
+        peripheral.updateValue(value.data(using: .utf8)!, for: myCharacteristic1, onSubscribedCentrals: [central])
+    }
+
 }
