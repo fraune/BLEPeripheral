@@ -17,6 +17,7 @@
 		E27BA70E28B879DD003E7115 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E27BA70D28B879DD003E7115 /* Preview Assets.xcassets */; };
 		E27BA71628B87E59003E7115 /* BluetoothView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27BA71528B87E59003E7115 /* BluetoothView.swift */; };
 		E27BA71828B87E64003E7115 /* BluetoothViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27BA71728B87E64003E7115 /* BluetoothViewModel.swift */; };
+		E2E64C1A28C589A700702577 /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E64C1928C589A700702577 /* Temperature.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		E27BA70D28B879DD003E7115 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E27BA71528B87E59003E7115 /* BluetoothView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothView.swift; sourceTree = "<group>"; };
 		E27BA71728B87E64003E7115 /* BluetoothViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothViewModel.swift; sourceTree = "<group>"; };
+		E2E64C1928C589A700702577 /* Temperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temperature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		E27BA70528B879DC003E7115 /* BLEPeripheral */ = {
 			isa = PBXGroup;
 			children = (
+				E2E64C1828C5899C00702577 /* Gatt */,
 				E2502F2228BFFBF7000ABAFD /* Utility */,
 				E27BA71428B87DF6003E7115 /* Main */,
 				E27BA70628B879DC003E7115 /* BLEPeripheralApp.swift */,
@@ -99,6 +102,14 @@
 				E27BA71728B87E64003E7115 /* BluetoothViewModel.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		E2E64C1828C5899C00702577 /* Gatt */ = {
+			isa = PBXGroup;
+			children = (
+				E2E64C1928C589A700702577 /* Temperature.swift */,
+			);
+			path = Gatt;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +184,7 @@
 			files = (
 				E21003BE28C554C000818D0F /* Data+Bytes.swift in Sources */,
 				E2502F2428BFFC24000ABAFD /* Data+HexEncodedString.swift in Sources */,
+				E2E64C1A28C589A700702577 /* Temperature.swift in Sources */,
 				E21003C028C554E400818D0F /* String+Hexadecimal.swift in Sources */,
 				E2502F2628BFFC6E000ABAFD /* CBManagerState+humanReadable.swift in Sources */,
 				E27BA70928B879DC003E7115 /* ContentView.swift in Sources */,
